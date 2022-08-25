@@ -4,10 +4,7 @@
  */
 package com.portfoliweb.mauricio.Security.Enums;
 
-/**
- *
- * @author Mauri
- */
+
 public enum RolNombre {
     ROLE_ADMIN, ROLE_USER
     

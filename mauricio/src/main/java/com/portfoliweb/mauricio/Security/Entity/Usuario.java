@@ -18,7 +18,7 @@ import javax.persistence.ManyToMany;
 import javax.validation.constraints.NotNull;
 
 @Entity
-public class Usuario {
+public class Usuario  {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private int id;

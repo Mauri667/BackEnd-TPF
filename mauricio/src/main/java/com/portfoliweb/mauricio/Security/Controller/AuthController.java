@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.portfoliweb.mauricio.Security.Controller;
 
 import com.portfoliweb.mauricio.Security.Dto.JwtDto;
@@ -32,6 +29,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+
+
 @RestController
 @RequestMapping("/auth")
 @CrossOrigin
@@ -56,7 +55,7 @@ public class AuthController {
         if (usuarioService.existByNombreUsuario(nuevoUsuario.getNombreUsuario())) {
             return new ResponseEntity(new Mensaje("Ese nombre de usuario ya existe"), HttpStatus.BAD_REQUEST);
         }
-        if (usuarioService.existByNombreUsuario(nuevoUsuario.getEmail())) {
+        if (usuarioService.existByEmail(nuevoUsuario.getEmail())) {
             return new ResponseEntity(new Mensaje("Ese email ya existe"), HttpStatus.BAD_REQUEST);
         }
 

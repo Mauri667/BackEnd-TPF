@@ -4,7 +4,7 @@
  */
 package com.portfoliweb.mauricio.Security.jwt;
 
-import com.portfoliweb.mauricio.Security.Service.UserDetailsImp;
+import com.portfoliweb.mauricio.Security.Service.UserDetailsServiceImp;
 import java.io.IOException;
 import javax.servlet.FilterChain;
 import javax.servlet.ServletException;
@@ -24,7 +24,7 @@ public class JwtTokenFilter extends OncePerRequestFilter {
     @Autowired
     JwtProvider jwtProvider;
     @Autowired
-    UserDetailsImp userDetailsServiceImp;
+    UserDetailsServiceImp userDetailsServiceImp;
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {

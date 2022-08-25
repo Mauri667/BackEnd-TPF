@@ -7,10 +7,7 @@ package com.portfoliweb.mauricio.Security.Dto;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- *
- * @author Mauri
- */
+
 public class NuevoUsuario {
     private String nombre;
     private String nombreUsuario;
