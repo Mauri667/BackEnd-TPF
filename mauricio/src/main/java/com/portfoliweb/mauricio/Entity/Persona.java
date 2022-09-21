@@ -30,6 +30,9 @@ public class Persona {
     private String descripcion;
     @Size (min =1, max=50, message= "no cumple con la longitud")
     private String img;
+    @NotNull
+    private String titulo;
+    
 
     public Long getId() {
         return id;
